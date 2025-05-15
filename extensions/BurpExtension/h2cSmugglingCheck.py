@@ -13,7 +13,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory):
     def registerExtenderCallbacks(self, callbacks):
         self._callbacks = callbacks
         self._helpers = callbacks.getHelpers()
-        callbacks.setExtensionName("h2cSmuggler")
+        callbacks.setExtensionName("burp-h2csmgl")
         callbacks.registerContextMenuFactory(self)
 
     def createMenuItems(self, contextMenuInvocation):
